@@ -1,0 +1,24 @@
+{
+    "name": "artarts36/laravel-env-documentator",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "ArtARTs36\\LaravelEnvDocumentator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ArtARTs36",
+            "email": "temicska99@mail.ru"
+        }
+    ],
+    "require": {
+        "artarts36/env-editor": "^1.2",
+        "artarts36/ci-git-sender": "^0.1",
+        "illuminate/console": "^8",
+        "illuminate/support": "^8"
+    },
+    "require-dev": {
+        "orchestra/testbench": "*"
+    }
+}
