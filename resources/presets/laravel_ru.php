@@ -22,6 +22,10 @@ return [
     'LOG_CHANNEL' => [
         'description' => 'Канал логирования по-умолчанию',
     ],
+    'LOG_DEPRECATIONS_CHANNEL' => [
+        'description' => 'Этот параметр управляет каналом журнала, который следует использовать для регистрации предупреждений',
+        'type' => 'string',
+    ],
     'DB_CONNECTION' => [
         'description' => 'Подключение к базе данных (pgsql/mysql/sqlite)',
     ],
@@ -98,6 +102,26 @@ return [
     ],
     'MAIL_FROM_NAME' => [
         'description' => 'Имя отправителя',
+        'type' => 'string',
+    ],
+    'BROADCAST_DRIVER' => [
+        'description' => 'Broadcast Драйвер ("pusher", "ably", "redis", "log", "null")',
+        'type' => 'string',
+    ],
+    'PUSHER_APP_ID' => [
+        'description' => 'Pusher Application ID',
+        'type' => 'string',
+    ],
+    'PUSHER_APP_KEY' => [
+        'description' => 'Pusher Application Key',
+        'type' => 'string',
+    ],
+    'PUSHER_APP_SECRET' => [
+        'description' => 'Pusher Application Secret',
+        'type' => 'string',
+    ],
+    'PUSHER_APP_CLUSTER' => [
+        'description' => 'Pusher Application Cluster',
         'type' => 'string',
     ],
 ];

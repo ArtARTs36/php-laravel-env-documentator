@@ -22,6 +22,14 @@ return [
     'LOG_CHANNEL' => [
         'description' => 'Default Log Channel',
     ],
+    'LOG_DEPRECATIONS_CHANNEL' => [
+        'description' => 'This option controls the log channel that should be used to log warnings',
+        'type' => 'string',
+    ],
+    'LOG_LEVEL' => [
+        'description' => 'Log Level (critical, debug)',
+        'type' => 'string',
+    ],
     'DB_CONNECTION' => [
         'description' => 'Database Connection (pgsql/mysql/sqlite)',
     ],
@@ -98,6 +106,26 @@ return [
     ],
     'MAIL_FROM_NAME' => [
         'description' => 'Mail Sender Name',
+        'type' => 'string',
+    ],
+    'BROADCAST_DRIVER' => [
+        'description' => 'Broadcast Driver ("pusher", "ably", "redis", "log", "null")',
+        'type' => 'string',
+    ],
+    'PUSHER_APP_ID' => [
+        'description' => 'Pusher Application ID',
+        'type' => 'string',
+    ],
+    'PUSHER_APP_KEY' => [
+        'description' => 'Pusher Application Key',
+        'type' => 'string',
+    ],
+    'PUSHER_APP_SECRET' => [
+        'description' => 'Pusher Application Secret',
+        'type' => 'string',
+    ],
+    'PUSHER_APP_CLUSTER' => [
+        'description' => 'Pusher Application Cluster',
         'type' => 'string',
     ],
 ];
