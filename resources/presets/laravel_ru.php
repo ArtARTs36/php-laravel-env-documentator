@@ -62,4 +62,34 @@ return [
         'description' => 'Redis клиент',
         'default_value' => 'phpredis',
     ],
+    'FILESYSTEM_DRIVER' => [
+        'description' => 'Драйвер файловой системы (local/ftp/sftp/s3)',
+    ],
+    'QUEUE_CONNECTION' => [
+        'description' => 'Название подключения к очереди по-умолчанию (sync/database/redis)',
+    ],
+    'MAIL_MAILER' => [
+        'description' => 'Mailer по-умолчанию (smtp/log/array)',
+    ],
+    'MAIL_HOST' => [
+        'description' => 'Mail хост',
+    ],
+    'MAIL_PORT' => [
+        'description' => 'Mail порт',
+    ],
+    'MAIL_USERNAME' => [
+        'description' => 'Имя пользователя mail сервера',
+    ],
+    'MAIL_PASSWORD' => [
+        'description' => 'Пароль пользователя mail сервера',
+    ],
+    'MAIL_ENCRYPTION' => [
+        'description' => 'Mail шифрование (tls/null)',
+    ],
+    'MAIL_FROM_ADDRESS' => [
+        'description' => 'Адрес отправителя (my@gmail.com)',
+    ],
+    'MAIL_FROM_NAME' => [
+        'description' => 'Имя отправителя',
+    ],
 ];

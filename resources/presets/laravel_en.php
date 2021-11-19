@@ -62,4 +62,34 @@ return [
         'description' => 'Redis Client',
         'default_value' => 'phpredis',
     ],
+    'FILESYSTEM_DRIVER' => [
+        'description' => 'File System Driver (local/ftp/sftp/s3)',
+    ],
+    'QUEUE_CONNECTION' => [
+        'description' => 'Default Queue Connection Name (sync/database/redis)',
+    ],
+    'MAIL_MAILER' => [
+        'description' => 'Default Mailer (smtp/log/array)',
+    ],
+    'MAIL_HOST' => [
+        'description' => 'Mail Host',
+    ],
+    'MAIL_PORT' => [
+        'description' => 'Mail Port',
+    ],
+    'MAIL_USERNAME' => [
+        'description' => 'Mail User Name',
+    ],
+    'MAIL_PASSWORD' => [
+        'description' => 'Mail User Password',
+    ],
+    'MAIL_ENCRYPTION' => [
+        'description' => 'Mail Encryption (tls/null)',
+    ],
+    'MAIL_FROM_ADDRESS' => [
+        'description' => 'Mail Sender Address (my@gmail.com)',
+    ],
+    'MAIL_FROM_NAME' => [
+        'description' => 'Mail Sender Name',
+    ],
 ];
