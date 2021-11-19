@@ -58,6 +58,10 @@ class VariableSetFactory
     protected function merge(array $one, array $two): array
     {
         foreach ($two as $varName => $properties) {
+            if (! isset($one[$varName])) {
+                continue;
+            }
+
             foreach ($properties as $property => $value) {
                 $one[$varName][$property] ??= $value;
             }
