@@ -43,4 +43,23 @@ return [
     'SESSION_DRIVER' => [
         'description' => 'HTTP Session Driver',
     ],
+    'SESSION_LIFETIME' => [
+        'description' => 'HTTP Session Lifetime',
+    ],
+    'REDIS_HOST' => [
+        'description' => 'Redis Host',
+    ],
+    'REDIS_PASSWORD' => [
+        'description' => 'Redis Password',
+    ],
+    'REDIS_PORT' => [
+        'description' => 'Redis Port',
+    ],
+    'REDIS_URL' => [
+        'description' => 'Redis URL',
+    ],
+    'REDIS_CLIENT' => [
+        'description' => 'Redis Client',
+        'default_value' => 'phpredis',
+    ],
 ];

@@ -43,4 +43,23 @@ return [
     'SESSION_DRIVER' => [
         'description' => 'Драйвер HTTP сессии',
     ],
+    'SESSION_LIFETIME' => [
+        'description' => 'Время жизни HTTP сессии',
+    ],
+    'REDIS_HOST' => [
+        'description' => 'Redis хост',
+    ],
+    'REDIS_PASSWORD' => [
+        'description' => 'Пароль от Redis',
+    ],
+    'REDIS_PORT' => [
+        'description' => 'Redis порт',
+    ],
+    'REDIS_URL' => [
+        'description' => 'Redis URL',
+    ],
+    'REDIS_CLIENT' => [
+        'description' => 'Redis клиент',
+        'default_value' => 'phpredis',
+    ],
 ];

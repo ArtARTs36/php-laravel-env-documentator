@@ -64,9 +64,7 @@ class VariableSetFactory
             }
 
             foreach ($properties as $property => $value) {
-                if (! isset($one[$varName][$property]) || mb_strlen($value) > mb_strlen($one[$varName][$property])) {
-                    $one[$varName][$property] = $value;
-                }
+                $one[$varName][$property] ??= $value;
             }
 
             $one[$varName]['name'] ??= $varName;
