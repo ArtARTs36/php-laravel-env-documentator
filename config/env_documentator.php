@@ -27,5 +27,8 @@ return [
             'login' => 'my-login',
             'token' => env('ENV_DOCUMENTATOR_GIT_TOKEN'),
         ],
+        'commit' => [
+            'message' => '[DOCS] Build environment docs',
+        ],
     ],
 ];
