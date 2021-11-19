@@ -26,6 +26,10 @@ return [
         'description' => 'Этот параметр управляет каналом журнала, который следует использовать для регистрации предупреждений',
         'type' => 'string',
     ],
+    'LOG_LEVEL' => [
+        'description' => 'Уровень логирования (critical, debug)',
+        'type' => 'string',
+    ],
     'DB_CONNECTION' => [
         'description' => 'Подключение к базе данных (pgsql/mysql/sqlite)',
     ],
@@ -55,6 +59,7 @@ return [
     ],
     'REDIS_PASSWORD' => [
         'description' => 'Пароль от Redis',
+        'type' => 'string',
     ],
     'REDIS_PORT' => [
         'description' => 'Redis порт',

@@ -59,6 +59,7 @@ return [
     ],
     'REDIS_PASSWORD' => [
         'description' => 'Redis Password',
+        'type' => 'string',
     ],
     'REDIS_PORT' => [
         'description' => 'Redis Port',
@@ -131,8 +132,8 @@ return [
     'AWS_ACCESS_KEY_ID' => [
         'description' => 'AWS Access Key ID',
     ],
-    'AWS_SECRET_ACCESS_KEY_ID' => [
-        'description' => 'AWS SECRET Access Key ID',
+    'AWS_SECRET_ACCESS_KEY' => [
+        'description' => 'AWS SECRET Access Key',
     ],
     'AWS_DEFAULT_REGION' => [
         'description' => 'AWS Default Region',
