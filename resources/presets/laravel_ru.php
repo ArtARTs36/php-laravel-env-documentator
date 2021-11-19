@@ -142,4 +142,13 @@ return [
     'CACHE_DRIVER' => [
         'description' => 'Кэш драйвер (file, database, array, memcached, redis)',
     ],
+    'MIX_PUSHER_APP_KEY' => [
+        'description' => 'MIX Pusher Application Key',
+    ],
+    'MIX_PUSHER_APP_CLUSTER' => [
+        'description' => 'MIX Pusher Application Cluster',
+    ],
+    'MEMCACHED_HOST' => [
+        'description' => 'Memcached Host',
+    ],
 ];
