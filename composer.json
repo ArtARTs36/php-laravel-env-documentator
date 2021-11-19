@@ -10,6 +10,7 @@
         }
     ],
     "require": {
+        "php": "^8.0",
         "artarts36/env-editor": "^1.2",
         "artarts36/ci-git-sender": "^0.1",
         "illuminate/console": "^8",
