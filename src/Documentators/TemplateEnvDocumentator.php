@@ -2,7 +2,6 @@
 
 namespace ArtARTs36\LaravelEnvDocumentator\Documentators;
 
-use ArtARTs36\EnvEditor\Editor;
 use ArtARTs36\LaravelEnvDocumentator\Contracts\EnvDocumentator;
 use ArtARTs36\LaravelEnvDocumentator\Env\VariableSet;
 use Illuminate\Contracts\View\Factory;
