@@ -35,7 +35,7 @@ return [
         'description' => 'Database Name',
     ],
     'DB_USERNAME' => [
-        'description' => 'Пользователь базы данных',
+        'description' => 'Database User',
     ],
     'DB_PASSWORD' => [
         'description' => 'Database User\'s Password',
