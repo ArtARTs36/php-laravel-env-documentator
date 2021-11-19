@@ -40,4 +40,7 @@ return [
     'DB_PASSWORD' => [
         'description' => 'Пароль пользователя базы данных',
     ],
+    'SESSION_DRIVER' => [
+        'description' => 'Драйвер HTTP сессии',
+    ],
 ];

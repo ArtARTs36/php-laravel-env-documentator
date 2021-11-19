@@ -40,4 +40,7 @@ return [
     'DB_PASSWORD' => [
         'description' => 'Database User\'s Password',
     ],
+    'SESSION_DRIVER' => [
+        'description' => 'HTTP Session Driver',
+    ],
 ];
