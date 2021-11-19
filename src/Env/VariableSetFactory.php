@@ -46,8 +46,8 @@ class VariableSetFactory
         foreach (Editor::load($path)->getVariables() as $variable) {
             $variables[$variable->name] = [
                 'name' => $variable->name,
-                'description' => $variable->comment(),
-                'default_value' => $variable->value,
+                'description' => $variable->commentOrNull(),
+                'default_value' => $variable->value === '' ? null : $variable->value,
                 'type' => $variable->type(),
             ];
         }
@@ -57,15 +57,15 @@ class VariableSetFactory
 
     protected function merge(array $one, array $two): array
     {
-        foreach ($two as $name => $properties) {
+        foreach ($two as $varName => $properties) {
             foreach ($properties as $property => $value) {
-                $one[$name][$property] = $value;
+                $one[$varName][$property] ??= $value;
             }
 
-            $one[$name]['name'] ??= $name;
+            $one[$varName]['name'] ??= $varName;
 
-            if (! isset($one[$name]['type']) && array_key_exists('default_value', $one[$name])) {
-                $one[$name]['type'] = gettype($one[$name]['default_value']);
+            if (! isset($one[$varName]['type']) && array_key_exists('default_value', $one[$varName])) {
+                $one[$varName]['type'] = gettype($one[$varName]['default_value']);
             }
         }
 

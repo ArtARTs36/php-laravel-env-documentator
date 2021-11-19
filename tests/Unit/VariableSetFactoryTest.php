@@ -20,8 +20,9 @@ final class VariableSetFactoryTest extends TestCase
 
                                 ],
                                 'dict' => [
-                                    'APP_PORT' => [
-                                        'default_value' => 8081,
+                                    'VAR_WITHOUT_VALUE' => [
+                                        'description' => 'description-of-preset',
+                                        'default_value' => 'value-of-preset',
                                     ],
                                 ],
                             ],
@@ -32,33 +33,39 @@ final class VariableSetFactoryTest extends TestCase
                 [
                     'APP_NAME' => [
                         'name' => 'APP_NAME',
-                        'description' => "\n",
+                        'description' => '',
                         'defaultValue' => 'Laravel App',
                         'type' => 'string',
                     ],
                     'APP_PORT' => [
                         'name' => 'APP_PORT',
-                        'description' => "\n",
-                        'defaultValue' => '8081',
+                        'description' => '',
+                        'defaultValue' => '8080',
                         'type' => 'integer',
                     ],
                     'APP_ENV' => [
                         'name' => 'APP_ENV',
-                        'description' => "\n",
+                        'description' => '',
                         'defaultValue' => 'local',
                         'type' => 'string',
                     ],
                     'APP_KEY' => [
                         'name' => 'APP_KEY',
-                        'description' => "\n",
+                        'description' => '',
                         'defaultValue' => '4r34t43t4',
                         'type' => 'string',
                     ],
                     'APP_DEBUG' => [
                         'name' => 'APP_DEBUG',
-                        'description' => "\n",
+                        'description' => '',
                         'defaultValue' => true,
                         'type' => 'boolean',
+                    ],
+                    'VAR_WITHOUT_VALUE' => [
+                        'name' => 'VAR_WITHOUT_VALUE',
+                        'description' => 'description-of-preset',
+                        'defaultValue' => 'value-of-preset',
+                        'type' => 'string',
                     ],
                 ]
             ],
