@@ -13,4 +13,7 @@ return [
     'APP_DEBUG' => [
         'description' => 'Debug Mode (true/false)'
     ],
+    'APP_PORT'  => [
+        'description' => 'Application HTTP Port',
+    ],
 ];

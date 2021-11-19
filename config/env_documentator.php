@@ -4,7 +4,9 @@ return [
     'env' => [
         'default_path' => base_path('.env'),
         'preset' => [
-            'files' => [],
+            'files' => [
+                __DIR__ . '/../resources/presets/laravel_ru.php',
+            ],
             'dict' => [
                 'VAR_NAME' => [
                     'description' => 'Var description..',

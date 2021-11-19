@@ -13,4 +13,7 @@ return [
     'APP_DEBUG' => [
         'description' => 'Режим отладки (true/false)'
     ],
+    'APP_PORT'  => [
+        'description' => 'HTTP Порт приложения',
+    ],
 ];
