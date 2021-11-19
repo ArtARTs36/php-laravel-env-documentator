@@ -5,7 +5,6 @@ namespace ArtARTs36\LaravelEnvDocumentator\Tests\Unit;
 use ArtARTs36\LaravelEnvDocumentator\Env\VariableSetFactory;
 use ArtARTs36\LaravelEnvDocumentator\Tests\TestCase;
 use Illuminate\Config\Repository;
-use Illuminate\Filesystem\Filesystem;
 
 final class VariableSetFactoryTest extends TestCase
 {
@@ -53,7 +52,7 @@ final class VariableSetFactoryTest extends TestCase
      */
     public function testCreate(array $config, string $envPath, array $expected): void
     {
-        $factory = new VariableSetFactory(new Repository($config), new Filesystem());
+        $factory = new VariableSetFactory(new Repository($config));
 
         $results = [];
 
