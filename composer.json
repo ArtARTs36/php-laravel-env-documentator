@@ -1,6 +1,8 @@
 {
     "name": "artarts36/laravel-env-documentator",
     "type": "library",
+    "description": "Laravel Environment Documentator",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "ArtARTs36\\LaravelEnvDocumentator\\": "src/"
