@@ -143,4 +143,7 @@ return [
     'AWS_USE_PATH_STYLE_ENDPOINT' => [
         'description' => 'AWS: Use path style endpoint',
     ],
+    'CACHE_DRIVER' => [
+        'description' => 'Cache Driver (file, database, array, memcached, redis)',
+    ],
 ];
