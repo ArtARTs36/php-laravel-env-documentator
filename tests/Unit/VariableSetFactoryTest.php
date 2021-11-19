@@ -42,6 +42,24 @@ final class VariableSetFactoryTest extends TestCase
                         'defaultValue' => '8081',
                         'type' => 'integer',
                     ],
+                    'APP_ENV' => [
+                        'name' => 'APP_ENV',
+                        'description' => "\n",
+                        'defaultValue' => 'local',
+                        'type' => 'string',
+                    ],
+                    'APP_KEY' => [
+                        'name' => 'APP_KEY',
+                        'description' => "\n",
+                        'defaultValue' => '4r34t43t4',
+                        'type' => 'string',
+                    ],
+                    'APP_DEBUG' => [
+                        'name' => 'APP_DEBUG',
+                        'description' => "\n",
+                        'defaultValue' => true,
+                        'type' => 'boolean',
+                    ],
                 ]
             ],
         ];

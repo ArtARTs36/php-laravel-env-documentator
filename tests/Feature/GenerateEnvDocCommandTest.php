@@ -12,9 +12,16 @@ final class GenerateEnvDocCommandTest extends TestCase
      */
     public function testHandle(): void
     {
+        $docPath = '123.md';
+
+        @unlink($docPath);
+
         $this->artisan(GenerateEnvDocCommand::class, [
-            'doc-path' => '123.md',
+            'doc-path' => $docPath,
             '--env-path' => __DIR__ . '/../Mocks/1.env',
         ])->assertSuccessful();
+
+        self::assertFileExists($docPath);
+        @unlink($docPath);
     }
 }
