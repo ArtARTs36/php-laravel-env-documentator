@@ -5,7 +5,7 @@ return [
         'description' => 'Application Name',
     ],
     'APP_ENV' => [
-        'description' => 'Application Environment (production, testing, local)',
+        'description' => 'Application Environment (production/testing/local)',
     ],
     'APP_KEY' => [
         'description' => 'Application Key',
@@ -15,5 +15,29 @@ return [
     ],
     'APP_PORT'  => [
         'description' => 'Application HTTP Port',
+    ],
+    'APP_URL'   => [
+        'description' => 'APP HTTP Url',
+    ],
+    'LOG_CHANNEL' => [
+        'description' => 'Default Log Channel',
+    ],
+    'DB_CONNECTION' => [
+        'description' => 'Database Connection (pgsql/mysql/sqlite)',
+    ],
+    'DB_HOST' => [
+        'description' => 'Database Host',
+    ],
+    'DB_PORT' => [
+        'description' => 'Database Port',
+    ],
+    'DB_DATABASE' => [
+        'description' => 'Database Name',
+    ],
+    'DB_USERNAME' => [
+        'description' => 'Пользователь базы данных',
+    ],
+    'DB_PASSWORD' => [
+        'description' => 'Database User\'s Password',
     ],
 ];
