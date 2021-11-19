@@ -40,7 +40,7 @@ class EnvDocumentatorServiceProvider extends ServiceProvider
     protected function publishPackage(): void
     {
         $this->publishes([
-            __DIR__ . '/../../config/env_documentator.php' => $this->app->configPath('env_documentator.php'),
+            __DIR__ . '/../../config/env_documentator_for_publish.php' => $this->app->configPath('env_documentator.php'),
         ]);
     }
 }

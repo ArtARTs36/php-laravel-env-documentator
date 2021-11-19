@@ -5,7 +5,7 @@ return [
         'default_path' => base_path('.env.example'),
         'preset' => [
             'files' => [
-                __DIR__ . '/../resources/presets/laravel_ru.php',
+                __DIR__ . '/../vendor/artarts36/laravel-env-documentator/resources/presets/laravel_en.php',
             ],
             'dict' => [
                 'VAR_NAME' => [
