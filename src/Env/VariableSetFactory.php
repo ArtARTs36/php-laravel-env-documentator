@@ -64,7 +64,11 @@ class VariableSetFactory
             }
 
             foreach ($properties as $property => $value) {
-                $one[$varName][$property] ??= $value;
+                if (! isset($one[$varName][$property]) ||
+                    (($one[$varName][$property] === 'NULL' && $property === 'type') || $one[$varName][$property] === '')
+                ) {
+                    $one[$varName][$property] = $value;
+                }
             }
 
             $one[$varName]['name'] ??= $varName;
