@@ -8,8 +8,14 @@ return [
             'dict' => [
                 'VAR_NAME' => [
                     'description' => 'Var description..',
+                    'default_value' => 'string_default_value',
                 ],
             ],
+        ],
+    ],
+    'documentators' => [
+        'template' => [
+            'view' => 'env_documentator::env_doc_markdown',
         ],
     ],
     'git' => [

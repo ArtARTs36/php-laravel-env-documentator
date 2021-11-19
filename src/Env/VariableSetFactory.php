@@ -33,7 +33,7 @@ class VariableSetFactory
             $variables[$variable['name']] = Variable::fromArray($variable);
         }
 
-        return new VariableSet($variables);
+        return new VariableSet($variables, $envPath);
     }
 
     /**
@@ -58,8 +58,14 @@ class VariableSetFactory
     protected function merge(array $one, array $two): array
     {
         foreach ($two as $name => $properties) {
-            foreach ($properties as $k => $value) {
-                $one[$name][$k] = $value;
+            foreach ($properties as $property => $value) {
+                $one[$name][$property] = $value;
+            }
+
+            $one[$name]['name'] ??= $name;
+
+            if (! isset($one[$name]['type']) && array_key_exists('default_value', $one[$name])) {
+                $one[$name]['type'] = gettype($one[$name]['default_value']);
             }
         }
 

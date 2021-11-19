@@ -12,7 +12,7 @@ class GenerateEnvDocCommand extends Command
 
     public function handle(Repository $config, EnvDocGenerator $generator)
     {
-        $envPath = $this->argument('env-path') ?? $config->get('env_documentator.default_env_path');
+        $envPath = $this->option('env-path') ?? $config->get('env_documentator.env.default_path');
 
         if ($generator->generate($docPath = $this->argument('doc-path'), $envPath)) {
             $this->info('Documentation updated');
