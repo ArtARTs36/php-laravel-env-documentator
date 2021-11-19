@@ -3,16 +3,6 @@
     "type": "library",
     "description": "Laravel Environment Documentator",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "ArtARTs36\\LaravelEnvDocumentator\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "ArtARTs36\\LaravelEnvDocumentator\\Tests\\": "tests/"
-        }
-    },
     "authors": [
         {
             "name": "ArtARTs36",
@@ -28,6 +18,16 @@
     },
     "require-dev": {
         "orchestra/testbench": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArtARTs36\\LaravelEnvDocumentator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ArtARTs36\\LaravelEnvDocumentator\\Tests\\": "tests/"
+        }
     },
     "scripts": {
         "lint": [
