@@ -124,4 +124,19 @@ return [
         'description' => 'Pusher Application Cluster',
         'type' => 'string',
     ],
+    'AWS_ACCESS_KEY_ID' => [
+        'description' => 'AWS Access Key ID',
+    ],
+    'AWS_SECRET_ACCESS_KEY_ID' => [
+        'description' => 'AWS SECRET Access Key ID',
+    ],
+    'AWS_DEFAULT_REGION' => [
+        'description' => 'AWS Default Region',
+    ],
+    'AWS_BUCKET' => [
+        'description' => 'AWS Bucket',
+    ],
+    'AWS_USE_PATH_STYLE_ENDPOINT' => [
+        'description' => 'AWS: Use path style endpoint',
+    ],
 ];
