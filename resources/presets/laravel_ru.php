@@ -70,26 +70,34 @@ return [
     ],
     'MAIL_MAILER' => [
         'description' => 'Mailer по-умолчанию (smtp/log/array)',
+        'type' => 'string',
     ],
     'MAIL_HOST' => [
         'description' => 'Mail хост',
+        'type' => 'string',
     ],
     'MAIL_PORT' => [
         'description' => 'Mail порт',
+        'type' => 'integer',
     ],
     'MAIL_USERNAME' => [
         'description' => 'Имя пользователя mail сервера',
+        'type' => 'string',
     ],
     'MAIL_PASSWORD' => [
         'description' => 'Пароль пользователя mail сервера',
+        'type' => 'string',
     ],
     'MAIL_ENCRYPTION' => [
         'description' => 'Mail шифрование (tls/null)',
+        'type' => 'string',
     ],
     'MAIL_FROM_ADDRESS' => [
         'description' => 'Адрес отправителя (my@gmail.com)',
+        'type' => 'string',
     ],
     'MAIL_FROM_NAME' => [
         'description' => 'Имя отправителя',
+        'type' => 'string',
     ],
 ];

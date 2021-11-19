@@ -70,26 +70,34 @@ return [
     ],
     'MAIL_MAILER' => [
         'description' => 'Default Mailer (smtp/log/array)',
+        'type' => 'string',
     ],
     'MAIL_HOST' => [
         'description' => 'Mail Host',
+        'type' => 'string',
     ],
     'MAIL_PORT' => [
         'description' => 'Mail Port',
+        'type' => 'integer',
     ],
     'MAIL_USERNAME' => [
         'description' => 'Mail User Name',
+        'type' => 'string',
     ],
     'MAIL_PASSWORD' => [
         'description' => 'Mail User Password',
+        'type' => 'string',
     ],
     'MAIL_ENCRYPTION' => [
         'description' => 'Mail Encryption (tls/null)',
+        'type' => 'string',
     ],
     'MAIL_FROM_ADDRESS' => [
         'description' => 'Mail Sender Address (my@gmail.com)',
+        'type' => 'string',
     ],
     'MAIL_FROM_NAME' => [
         'description' => 'Mail Sender Name',
+        'type' => 'string',
     ],
 ];
