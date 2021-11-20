@@ -24,7 +24,7 @@ return [
         'bin' => 'git',
         'dir' => base_path(),
         'remote' => [
-            'login' => 'my-login',
+            'login' => env('ENV_DOCUMENTATOR_GIT_LOGIN'),
             'token' => env('ENV_DOCUMENTATOR_GIT_TOKEN'),
         ],
         'commit' => [
